@@ -553,6 +553,12 @@ footer {
     padding: 30px;
 }
 
+.merch-container{
+    border: 3px solid #000000;
+    padding: 30px;
+}
+
+
 
 /* Playlist */
 .playlist-section {
@@ -953,23 +959,23 @@ footer {
 
 /*playlist background*/
 
-.playlist-section {
+.playlist-container {
+    max-width: 800px; 
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2); 
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.stream-show {
     position: relative;
     width: 95%;
-    padding: 40px 20px;
+    padding: 40px 40px;
     background-image: url('heartsoper images/background/profile.gif'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 12px;
     text-align: center; 
-}
-
-.playlist-container {
-    max-width: 800px; 
-    margin: auto;
-    background: rgba(255, 255, 255, 0.2); 
-    padding: 20px;
-    border-radius: 12px;
 }
 
