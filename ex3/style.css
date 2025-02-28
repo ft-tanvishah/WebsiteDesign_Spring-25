@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #351930;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #bea694;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+}
+
+.lyrics {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+    color: #bea694;
+    transition: opacity 1s ease-in-out; /* Slower fade */
+}
+
+.animated-word {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: bold;
+    transition: all 0.6s ease-in-out;
+    position: relative;
+}
+
+#power {
+    color: #7c9d45;
+    transition: opacity 0.5s ease-in-out;
+}
+#power:hover {
+    opacity: 0;
+}
+
+.container:hover #cried {
+    animation: criedFall 1s forwards ease-in;
+}
+
+@keyframes criedFall {
+    0% { transform: translateY(-50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+#stronger {
+    color: #7a1e47;
+    transition: all 0.4s ease-in-out;
+}
+#stronger:hover {
+    transform: scale(1.3);
+    color: #561234;
+    text-shadow: 0px 0px 15px rgba(255, 50, 50, 0.8);
+}
+
+#grab {
+    color: #566427;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+#grab:hover {
+    animation: grabAggressive 0.5s forwards ease-in-out;
+}
+
+@keyframes grabAggressive {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(0); }
+}
+
+#chains {
+    color: #bea694;
+    transition: transform 0.5s ease-in-out;
+}
+#chains:hover {
+    transform: rotate(360deg);
+}
+
+#love {
+    color: #7a1e47;
+    background: #7c9d45;  /* Green background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#love:hover {
+    opacity: 0;
+}
+
+#free {
+    color: #7c9d45;
+    transition: all 0.7s ease-in-out;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+#free:hover {
+    font-size: 8rem;
+    display: block;
+    text-align: center;
+    width: 100%;
+    transform: scale(1.5);
+}
+
+#free:hover ~ .animated-word,
+#free:hover ~ .lyrics {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+
+#free:focus-within ~ .animated-word:not(#free),
+#free:focus-within ~ .lyrics {
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+
+#free:focus {
+    outline: none;
+    transform: scale(1.5); 
+}
