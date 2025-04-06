@@ -1,0 +1,175 @@
+::selection {
+  color: #000;
+  background: #42f4ee;
+}
+
+html {
+  font-size: 16px;
+}
+
+
+body {
+  margin: 0 auto;
+  color: #111;
+  background-color: #fefefe;
+  transition: all 1000ms cubic-bezier(0.76, 0, 1, 1);
+  font-family: "adobe-text-pro", serif;
+}
+
+#container {
+  max-width: 700px;
+  margin: 15vh auto 100px;
+  padding: 0 20px;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 2.2rem;
+  text-indent: 2.2rem;
+  margin: 0;
+}
+
+.story {
+  display: none;
+  padding: 2.2rem 0;
+}
+
+.story p {
+  font-family: "brandon-grotesque", sans-serif;
+}
+
+.story p:first-child {
+  text-indent: 0;
+}
+.story p:first-child span:first-child {
+  padding: 2.2rem 0;
+}
+
+p.storynewsection {
+  text-indent: 0;
+  padding-top: 2.2rem;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+  padding-bottom: 2px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #111 0%, #111 4%, rgba(0, 0, 0, 0) 4%);
+  transition: all 250ms cubic-bezier(0.76, 0, 1, 1);
+}
+
+a.externallink {
+  padding-bottom: 2px;
+  padding-top: 2px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #ffea34 0%, #ffea34 24%, rgba(0, 0, 0, 0) 24%);
+}
+a.externallink:hover {
+  background-color: #ffea34;
+  color: #111;
+}
+
+a.internallink {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #42f4ee 0%, #42f4ee 24%, rgba(0, 0, 0, 0) 24%);
+}
+a.internallink:hover {
+  background-color: #42f4ee;
+  color: #111;
+}
+
+span {
+  display: none;
+}
+
+.off {
+  display: none;
+}
+
+span.on {
+  display: inline;
+}
+
+div.on, p.storynewsection.on {
+  display: block;
+}
+
+#nothing {
+  position: absolute;
+  margin: 0 auto;
+  text-align: center;
+  width: 100px;
+  left: calc(50% - 50px);
+  top: 7.5vh;
+  display: none;
+}
+
+sup {
+  line-height: 0.5;
+  font-size: 10px;
+  margin-right: 6px;
+  margin-left: 2px;
+  font-family: "brandon-grotesque", sans-serif;
+}
+sup a {
+  color: #111;
+  padding-bottom: 2px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 18%, #111 24%, #111 24%, rgba(0, 0, 0, 0) 24%);
+}
+
+a.footnoteexternallink {
+  padding-bottom: 1px;
+  padding-top: 1px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, #ffea34 0%, #ffea34 20%, rgba(0, 0, 0, 0) 24%);
+}
+a.footnoteexternallink:hover {
+  background-color: #ffea34;
+  color: #111;
+}
+
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * adobe-text-pro:
+ *   - http://typekit.com/eulas/00000000000000003b9aee36
+ *   - http://typekit.com/eulas/00000000000000003b9aee37
+ * brandon-grotesque:
+ *   - http://typekit.com/eulas/0000000000000000000132df
+ *   - http://typekit.com/eulas/0000000000000000000132e0
+ *
+ * © 2009-2025 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2020-08-07 19:14:37 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=njh8lsp&ht=tk&f=6793.6794.10294.10295&a=3788943&app=typekit&e=css");
+
+@font-face {
+font-family:"adobe-text-pro";
+src:url("https://use.typekit.net/af/3c3aa5/00000000000000003b9aee36/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/3c3aa5/00000000000000003b9aee36/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/3c3aa5/00000000000000003b9aee36/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"adobe-text-pro";
+src:url("https://use.typekit.net/af/6b6c19/00000000000000003b9aee37/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/6b6c19/00000000000000003b9aee37/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/6b6c19/00000000000000003b9aee37/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"brandon-grotesque";
+src:url("https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/32d3ee/0000000000000000000132e0/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+.tk-adobe-text-pro { font-family: "adobe-text-pro",serif; }
+.tk-brandon-grotesque { font-family: "brandon-grotesque",sans-serif; }
